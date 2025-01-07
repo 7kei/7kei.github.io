@@ -1,0 +1,25 @@
+:root {
+    font-family: Inter, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+
+body {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100dvh;
+    flex-direction: column;
+}
+
+table {
+    background-color: #FF69B4;
+}
+
+tr, th, td {
+    width: 100px;
+    text-align: center;
+    background-color: #FFCCE5;
+}
