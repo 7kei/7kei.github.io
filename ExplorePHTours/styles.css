@@ -1,0 +1,67 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: sticky;
+    top:0;
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header > section {
+    display: flex;
+    align-items: center;
+}
+
+header > section > img {
+    max-width: 80px;
+    padding-right: 3px;
+}
+
+
+#banner {
+    background-image: url("img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    min-height: 700px;
+    max-width: 100%;
+
+    flex-direction: column;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#banner h1 {
+    font-size: 70px;
+    color: white;
+}
+
+#banner p {
+    font-size: 40px;
+    color: white;
+}
+
+#services, #promos, #packages, #book {
+    padding: 25px;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+footer { 
+    display: flex;
+    padding: 25px;
+    padding-top: 0px;
+    gap: 50px;
+}
