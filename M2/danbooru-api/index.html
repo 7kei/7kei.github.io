@@ -6,8 +6,8 @@
 <body>
     <h1>Random Miku Image</h1>
     <button id="clickButton" onclick="main()">Click me!</button>
-    <div id="imageDisplay">
-        <img id="imageDisplay" width="300">
+    <div>
+        <img id="imageDisplay" style="max-width: 40%;">
         <p id="ownerName">Owner: ---</p>
         <p id="imageSource">Source: ---</p>
         <p id="tags">Tags: ---</p>
@@ -21,7 +21,7 @@
         const ratingElement = document.getElementById('rating');
 
         function main() {
-            fetch("https://safebooru.org/index.php?page=dapi&s=post&q=index&limit=10&json=1&tags=hatsune_miku%20miku")
+            fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent('https://safebooru.org/index.php?page=dapi&s=post&q=index&limit=10&json=1&tags=hatsune_miku%20miku')}`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP ERROR: ${response.status}`);
@@ -36,6 +36,7 @@
                     imageSourceElement.textContent = `Source: ${final.source}`;
                     tagsElement.textContent = `Tags: ${final.tags}`;
                     ratingElement.textContent = `Rating: ${final.rating}`;
+                    console.log(final.file_url);
                 })
                 .catch(error => {
                     console.error('Error fetching: ', error);
