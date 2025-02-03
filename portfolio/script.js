@@ -106,11 +106,6 @@ window.addEventListener("click", (event) => {
     arrToDraw.push(newMiku);
 });
 
-window.addEventListener("touchstart", (event) => {
-    var newMiku = new Miku(context, event.x, event.y);
-    arrToDraw.push(newMiku);
-});
-
 window.addEventListener("resize", (event) => {
     CANVAS_WIDTH = canvas.width = window.innerWidth;
     CANVAS_HEIGHT = canvas.height = window.innerHeight;
