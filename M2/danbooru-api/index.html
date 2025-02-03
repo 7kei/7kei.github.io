@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hatsune Miku</title>
+</head>
+<body>
+    <h1>Random Miku Image</h1>
+    <button id="clickButton" onclick="main()">Click me!</button>
+    <div id="imageDisplay">
+        <img id="imageDisplay" width="300">
+        <p id="ownerName">Owner: ---</p>
+        <p id="imageSource">Source: ---</p>
+        <p id="tags">Tags: ---</p>
+        <p id="rating">Rating: ---</p>
+    </div>
+    <script>
+        const imageDisplayElement = document.getElementById('imageDisplay');
+        const ownerElement = document.getElementById('ownerName');
+        const imageSourceElement = document.getElementById('imageSource');
+        const tagsElement = document.getElementById('tags');
+        const ratingElement = document.getElementById('rating');
+
+        function main() {
+            fetch("https://safebooru.org/index.php?page=dapi&s=post&q=index&limit=10&json=1&tags=hatsune_miku%20miku")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP ERROR: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const randomIndex = Math.floor(Math.random() * 10);
+                    const final = data[randomIndex];
+                    imageDisplayElement.src = final.file_url;
+                    ownerElement.textContent = `Owner: ${final.owner}`;
+                    imageSourceElement.textContent = `Source: ${final.source}`;
+                    tagsElement.textContent = `Tags: ${final.tags}`;
+                    ratingElement.textContent = `Rating: ${final.rating}`;
+                })
+                .catch(error => {
+                    console.error('Error fetching: ', error);
+                    ownerElement.textContent = "Failed to fetch details";
+                    imageSourceElement.textContent = '';
+                    tagsElement.textContent = '';
+                    imageSourceElement.textContent = '';
+                    ratingElement.textContent = '';
+                });
+        }
+
+        main();
+
+    </script>
+</body>
+</html>
