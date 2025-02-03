@@ -44,7 +44,6 @@ class Miku {
         if (this.isStanding) {
             this.isFalling = false;
             this.sprite.src = 'images/standingmiku.png';
-            
         }
 
         if (this.toWalk != 0) {
@@ -107,6 +106,19 @@ window.addEventListener("click", (event) => {
     arrToDraw.push(newMiku);
 });
 
+window.addEventListener("touchstart", (event) => {
+    var newMiku = new Miku(context, event.x, event.y);
+    arrToDraw.push(newMiku);
+});
+
+window.addEventListener("resize", (event) => {
+    CANVAS_WIDTH = canvas.width = window.innerWidth;
+    CANVAS_HEIGHT = canvas.height = window.innerHeight;
+    arrToDraw.forEach(element => {
+        element.wait = 0;
+    });
+});
+
 document.addEventListener("DOMContentLoaded", (event) => {
     canvas = document.getElementById("miku-canvas");
     context = canvas.getContext("2d");
@@ -114,7 +126,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     CANVAS_WIDTH = canvas.width = window.innerWidth;
     CANVAS_HEIGHT = canvas.height = window.innerHeight;
 
-    const miku1 = new Miku(context);
+    const miku1 = new Miku(context,0,0);
     arrToDraw.push(miku1);
 
     start();
