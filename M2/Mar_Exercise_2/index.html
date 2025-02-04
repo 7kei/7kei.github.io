@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise 2 Mar</title>
+</head>
+<body>
+    <p id="paragraph"></p>
+    <script>
+        const paragraph = document.getElementById('paragraph');
+        const json = '{"name": "Keian", "age": 19, "hobbies": ["sleeping","eating"]}';
+        const obj = JSON.parse(json);
+        console.log(obj.name);
+        console.log(obj.age);
+        console.log(obj.hobbies)
+        const njson = JSON.stringify(obj);
+        console.log(njson);
+        paragraph.textContent = njson;
+        alert(njson);
+    </script>
+</body>
+</html>

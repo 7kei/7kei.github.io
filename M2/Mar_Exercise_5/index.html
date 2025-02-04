@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Random Quote Generator Mar</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+
+        #quoteDisplay {
+            margin: 20px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        #author {
+            font-style: italic;
+            color: #555;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: rebeccapurple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Quote Generator Mar</h1>
+    <div id="quoteDisplay">
+        <p id="quote">Click the button to get a random quote!</p>
+        <p id="author"></p>
+    </div>
+    <button id="newQuoteBtn">Get New Quote</button><br><br>
+    <button id="copyToClipboard">Copy Quote To Clipboard</button>
+    <script>
+        const quoteElement = document.getElementById('quote');
+        const authorElement = document.getElementById('author');
+        const newQuoteButton = document.getElementById('newQuoteBtn');
+        const copyButton = document.getElementById('copyToClipboard');
+
+        function fetchQuote() {
+            quoteElement.textContent = 'Loading quote...';
+            authorElement.textContent = '';
+
+            fetch('https://dummyjson.com/quotes')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const randomIndex = Math.floor(Math.random() *
+                        data.quotes.length);
+                    const randomQuote = data.quotes[randomIndex];
+                    quoteElement.textContent = `"${randomQuote.quote}"`;
+                    authorElement.textContent = `- ${randomQuote.author}`;
+                })
+                .catch(error => {
+                    console.error('Error fetching quote:', error);
+                    quoteElement.textContent = 'Failed to load quote. Please try again.'; 
+                    authorElement.textContent = '';
+                });
+        }
+
+        newQuoteButton.addEventListener('click', fetchQuote);
+        copyButton.addEventListener('click', () => {
+            const text = `${quoteElement.textContent} ${authorElement.textContent}`;
+            navigator.clipboard.writeText(text);
+            alert(`Copied to clipboard!\n${text}`);
+        });
+        fetchQuote(); 
+    </script>
+</body>
+</html>

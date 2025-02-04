@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise 1 Mar</title>
+</head>
+<body>
+    <p id="paragraph">Hello, World!</p>
+    <button id="changeTextBtn">Change Text</button>
+    <script>
+        const button = document.getElementById('changeTextBtn');
+        const paragraph = document.getElementById('paragraph');
+        button.addEventListener('click', function () {
+            paragraph.textContent = 'You clicked the button!';
+        });
+    </script>
+</body>
+</html>
