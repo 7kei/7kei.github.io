@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Miku -->
-    <script src="script.js"></script>
     <link rel="preload" href="images/fallingmiku.png" as="image">
     <link rel="preload" href="images/standingmiku.png" as="image">
     <link rel="preload" href="images/walkingmikuL.png" as="image">
@@ -14,7 +13,10 @@
 </head>
 <body>
     <!-- Miku -->
-    <canvas id="miku-canvas"></canvas>
+    <div class="overlay">
+        <button id="hideMikuButton">Hide Miku</button>
+        <canvas id="miku-canvas"></canvas>
+    </div>
 
     <!-- Main content -->
     <main>
@@ -58,7 +60,7 @@
                         </td>
                         <td>
                             <img src="icons/github-142-svgrepo-com.svg" style="width: 40px; margin: 0; padding: 0;">
-                            <p style="z-index:999;"><a href='https://github.com/7kei' style="color: black;">github.com/7kei</a><br><a href='https://github.com/keikei14' style="color: black;">github.com/keikei14</a></p>
+                            <p style="z-index:999;"><a href='https://github.com/7kei' target="_blank" style="color: black;">github.com/7kei</a><br><a href='https://github.com/keikei14' target="_blank" style="color: black;">github.com/keikei14</a></p>
                         </td>
                     </tr>
                 </table>
@@ -66,6 +68,21 @@
             </div>
             <div class='infosquare' id="project-highlights">
                 <h5>PROJECT HIGHLIGHTS</h5>
+
+                <h1>HappyTeeth</h1>
+                <h3>A Web-Based Patient Record Management System for Cascabel Dental Clinic</h3>
+                <p>HappyTeeth is a web-based patient record management system developed for Cascabel Dental Clinic in Davao City to replace their traditional paper-based record-keeping system. The application digitizes patient records, allowing for efficient storage and management of patient information and other details.</p>
+                <div class='row-image-container'>
+                    <img src="images/dental-1.png" loading="lazy" style="max-width: 32%;">
+                    <img src="images/dental-2.png" loading="lazy" style="max-width: 32%;">
+                    <img src="images/dental-3.png" loading="lazy" style="max-width: 32%;">
+                </div>
+                <div style="display: inline-flex; align-items: center; gap: 5px">
+                    <img src="icons/github-142-svgrepo-com.svg" style="width: 18px;">
+                    <a href="https://github.com/sophianyap/im" target="_blank"><p style="text-wrap: wrap; color: black;">github.com/sophianyap/im</p></a>
+                    <img src="icons/web-svgrepo-com.svg" style="width: 18px;">
+                    <a href="https://happyteeth.7kei.me" target="_blank"><p style="text-wrap: wrap; color: black;">happyteeth.7kei.me</p></a>
+                </div>
 
                 <h1>AFC Rescue Traders POS System</h1>
                 <p>A POS system using WinForms, C#, MS SQL Server.</p>
@@ -101,12 +118,14 @@
                 <hr>
             </div>
 
-            <div class="textbox-with-shadow" style="margin-top: 200px;">
+            <div class="textbox-with-shadow" style="margin-top: 70px;">
                 <h1>CONTACT ME</h1>
                 <p style="text-align: center;">keianrenheartmar@gmail.com<br>+639178189435</p>
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
 
     <!-- Background -->
     <div class="bg">
