@@ -3,7 +3,7 @@ var canvas;
 var context;
 let deltaTime = 0;
 let lastTimestamp = 0;
-let animationPaused = false;
+let animationPaused = true;
 let animationFrameId = null;
 
 var CANVAS_WIDTH;
