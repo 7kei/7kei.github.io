@@ -1,6 +1,26 @@
 {
     "projects": [
         {
+            "title": "Mapúa eClearance",
+            "org": "Mapúa MCM",
+            "date": "May 2026 - Jun 2026",
+            "role": "Backend Developer, Database Designer",
+            "stack": "Python, Django, PostgreSQL",
+            "description": "Developed the backend for a web-based clearance system for Mapúa MCM students, including a PostgreSQL database schema and Django REST API.",
+            "links": [{ "label": "github.com/—", "url": "#" }],
+            "image": "https://placehold.co/800x500?text=Mapúa+eClearance"
+        },
+        {
+            "title": "Kuyog",
+            "org": "Independent Project",
+            "date": "Apr 2026 - May 2026",
+            "role": "Frontend Developer",
+            "stack": "Flutter, Dart, Firebase",
+            "description": "Developed the frontend of a cross-platform mobile app for Mindanao tourism.",
+            "links": [{ "label": "github.com/—", "url": "#" }],
+            "image": "https://placehold.co/800x500?text=Kuyog"
+        },
+        {
             "title": "Project Genesis",
             "org": "Lumina Tech",
             "date": "Dec 2025 - Feb 2026",
@@ -23,17 +43,30 @@
         {
             "title": "Aninna BMS",
             "org": "Aninna",
-            "date": "Sep - Dec 2025",
+            "date": "Sep 2025 - Dec 2025",
             "role": "Backend Developer, Database Designer, DevOps",
             "stack": "Django + DRF, React, Docker, Amazon EC2",
             "description": "Full-stack SaaS: POS, inventory, payroll, and dashboard analytics — containerized and deployed to EC2.",
             "links": [{ "label": "github.com/—", "url": "#" }],
             "image": "https://placehold.co/800x500?text=Aninna+BMS"
         },
+
+        {
+            "title": "Fishease",
+            "org": "Independent Project",
+            "date": "Jun 2025 - Jul 2025",
+            "role": "Full Stack Developer",
+            "stack": "Swift, SwiftUI, CoreML",
+            "description": "Web-based patient record management system that digitized the clinic's paper-based workflow.",
+            "links": [
+                { "label": "github.com/7kei/Fishease", "url": "https://github.com/7kei/Fishease" }
+            ],
+            "image": "https://placehold.co/800x500?text=Fishease"
+        },
         {
             "title": "HappyTeeth",
             "org": "Cascabel Dental Clinic",
-            "date": "Date: —",
+            "date": "Mar 2025",
             "role": "Full Stack Developer",
             "stack": "Web (PHP / MySQL)",
             "description": "Web-based patient record management system that digitized the clinic's paper-based workflow.",
@@ -44,9 +77,9 @@
             "image": "../archived/portfolio/images/dental-1.png"
         },
         {
-            "title": "MMCM Library Feedback",
+            "title": "MMCM Library Feedback System",
             "org": "MMCM CLIR",
-            "date": "Date: —",
+            "date": "Oct 2024 - Apr 2025",
             "role": "Full Stack Developer",
             "stack": "Node.js, SQLite",
             "description": "Library feedback collection and reporting system for the MMCM Center for Learning & Information Resources.",
@@ -56,7 +89,7 @@
         {
             "title": "AFC POS System",
             "org": "AFC Rescue Traders",
-            "date": "Date: —",
+            "date": "Oct 2024",
             "role": "Full Stack Developer",
             "stack": "C#, WinForms, MS SQL Server",
             "description": "Windows point-of-sale desktop app with inventory and transaction management.",
@@ -64,14 +97,49 @@
             "image": "../archived/portfolio/images/afc1.png"
         },
         {
+            "title": "SwiftTokenizer",
+            "org": "Independent Project",
+            "date": "Sept 2024",
+            "role": "Full Stack Developer",
+            "stack": "Swift, WinUI, WinRT",
+            "description": "A sample tokenizer written in Swift, with an accompanying UI using WinUI through Swift-WinRT.",
+            "links": [
+                { "label": "github.com/7kei/SwiftTokenizer", "url": "https://github.com/7kei/SwiftTokenizer" }
+            ],
+            "image": "https://placehold.co/800x500?text=SwiftTokenizer"
+        },
+        {
             "title": "pyaudiotagger",
-            "org": "Personal Project",
-            "date": "Date: —",
-            "role": "Solo Developer",
-            "stack": "Python",
+            "org": "Independent Project",
+            "date": "Mar 2024",
+            "role": "Full Stack Developer",
+            "stack": "Python, Tkinter, music_tag",
             "description": "Command-line tool for tagging audio metadata using a Python music tagging library.",
             "links": [{ "label": "github.com/7kei/pyaudiotagger", "url": "https://github.com/7kei/pyaudiotagger/" }],
             "image": "../archived/portfolio/images/py1.png"
+        },
+        {
+            "title": "mod3_project",
+            "org": "Independent Project",
+            "date": "Oct 2023 - Nov 2023",
+            "role": "Full Stack Developer",
+            "stack": "C++, Qt6, Open Exchange API",
+            "description": "C++ based Qt GUI currency converter using Open Exchange API for realtime currency data.",
+            "links": [
+                { "label": "github.com/sophianyap/im", "url": "https://github.com/sophianyap/im" },
+                { "label": "happyteeth.7kei.me", "url": "https://happyteeth.7kei.me" }
+            ],
+            "image": "https://placehold.co/800x500?text=mod3_project"
+        },
+        {
+            "title": "Automatic Attendance Monitoring System",
+            "org": "Independent Project",
+            "date": "Apr 2024 - May 2023",
+            "role": "Full Stack Developer",
+            "stack": ".NET Framework, C#, WinForms, MS SQL Server",
+            "description": "It is the middleware component of my senior high school capstone project. It interfaces between a Microsft SQL Server instance and the serial output of an Arduino UNO.",
+            "links": [{ "label": "github.com/7kei/capstone_dotnetframework", "url": "https://github.com/7kei/capstone_dotnetframework/" }],
+            "image": "https://placehold.co/800x500?text=Automatic+Attendance+Monitoring+System"
         }
     ],
     "certifications": [
