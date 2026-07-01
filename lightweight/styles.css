@@ -426,8 +426,18 @@ body {
     object-fit: cover;
     object-position: top;
     border: 2px solid #000;
-    cursor: zoom-in;
+    cursor: pointer;
     image-rendering: pixelated;
+}
+
+.project-card {
+    transition: transform 0.15s ease;
+    will-change: transform;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    z-index: 2;
 }
 
 .desc {
