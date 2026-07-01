@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'NintendoDS';
+  src: url('font.ttf')  format('truetype')
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 10dvw;
+  }
+}
+
+* {
+    font-family: 'NintendoDS';
+    image-rendering: pixelated;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fbd968;
+}
+
+header {
+    background-color: #fbd968;
+    background-image: linear-gradient(180deg, #ffffff36, #000000);
+    background-clip: content-box;
+    background-blend-mode: overlay;
+    width: 100dvw;
+    height: 9dvh;
+    outline: 5px solid black;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: #fbd968;
+    background-image: linear-gradient(180deg, #ffffff36, #000000);
+    background-clip: content-box;
+    background-blend-mode: overlay;
+    width: 100dvw;
+    height: 9dvh;
+    outline: 5px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.container {
+    background-image: url('background.svg');
+    background-color: rgba(255, 255, 255, 0.35);
+    background-size: 10dvw;
+    background-position: 1 5dvh; 
+    background-blend-mode: overlay;
+    flex: auto;
+    z-index: -1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    animation: scrollBackground 3.5s linear infinite;
+}
+
+.container img {
+  width: 60dvh;
+  height: 60dvh;
+  object-fit: cover;
+  outline: 5px solid gray;
+}
+
+.username {
+    padding-left: 1dvw;
+    font-size: 4em;
+    color: white;
+}
+
+.container p {
+    font-size: 2em;
+    color: black;
+}
+
+footer button {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    margin-right: 1dvw;
+    background-image: linear-gradient(0deg, white, #B5B5B5);
+    border: 3px solid   white;
+    outline: 3px solid #4A4A4A;
+    cursor: pointer;
+}

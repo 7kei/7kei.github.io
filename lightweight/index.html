@@ -3,184 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../theme/ds/ds.css/dist/ds.css">
     <link rel="stylesheet" href="styles.css">
     <title>Keian Mar — Resume</title>
 </head>
-<body>
-<main class="resume">
-    <header class="resume-header">
-        <h1>Keian Mar</h1>
-        <p class="contact">
-            Davao City &bull;
-            <a href="mailto:keianrenheartmar@gmail.com">keianrenheartmar@gmail.com</a> &bull;
-            <a href="https://linkedin.com/in/keianmar">linkedin.com/in/keianmar</a> &bull;
-            <a href="https://github.com/7kei">github.com/7kei</a> &bull;
-            +639178189435
-        </p>
-    </header>
+<body class="ds-grid">
+    <header class="bar-lg ds-darkpurple"></header>
 
-    <section>
-        <h2>Projects</h2>
+    <main class="resume pictochat-window">
+        <section class="alert resume-header">
+            <h1>Keian Mar</h1>
+            <p class="contact">
+                Davao City &bull;
+                <a href="mailto:keianrenheartmar@gmail.com">keianrenheartmar@gmail.com</a> &bull;
+                <a href="https://linkedin.com/in/keianmar">linkedin.com/in/keianmar</a> &bull;
+                <a href="https://github.com/7kei">github.com/7kei</a> &bull;
+                <a href="https://github.com/keikei14">github.com/keikei14</a> &bull;
+                +639178189435
+            </p>
+        </section>
 
-        <div class="entry">
-            <div class="entry-head">
-                <strong>Project Genesis</strong>
-                <span class="right">December 2025 – February 2026</span>
+        <section class="resume-section">
+            <h2 class="pictochat-status ds-magenta">About Me</h2>
+
+            <div class="pictochat-message">
+                <header class="ds-magenta">Personal Statement</header>
+                <p>A Computer Science student passionate about building innovative software solutions. Strong foundation in Python, C#, and C++; thrives in collaborative environments and eager to grow as a software engineer.</p>
             </div>
-            <p class="meta">Affiliation: Lumina Tech<br>
-            Roles: Full Stack Developer, Database Designer<br>
-            Stack: Node.js, React + Next.js, MySQL (Prisma)</p>
-            <ul>
-                <li>Designed scalable database architecture with 24 normalized tables implementing CRUD operations, data validation, and referential integrity for enterprise-grade multi-tenant application</li>
-            </ul>
-            <img src="images/project-genesis.png" alt="Project Genesis Screenshot" class="project-image">
+        </section>
+
+        <section class="resume-section resume-section-grid" data-render="projects" data-color="ds-orange">
+            <h2 class="pictochat-status ds-orange">Projects</h2>
+        </section>
+
+        <section class="resume-section resume-section-grid" data-render="certifications" data-color="ds-turquoise">
+            <h2 class="pictochat-status ds-turquoise">Certifications</h2>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="pictochat-status ds-lime">Experience</h2>
+
+            <div class="pictochat-message">
+                <header class="ds-lime">Student Assistant</header>
+                <div class="entry-head">
+                    <strong>Mapúa Malayan Colleges Mindanao</strong>
+                    <span class="right">May 2026 – July 2026</span>
+                </div>
+                <p class="meta">Davao City, Philippines</p>
+                <ul>
+                    <li>Developing and maintaining backend systems for internal administrative tools under the Office for Artificial Intelligence Curriculum Integration (OAICI)</li>
+                    <li>Building RESTful API endpoints using Django REST Framework with PostgreSQL for secure and efficient data management</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="pictochat-status ds-pink">Education</h2>
+
+            <div class="pictochat-message">
+                <header class="ds-pink">Mapúa Malayan Colleges Mindanao</header>
+                <div class="entry-head">
+                    <strong>Bachelor of Science in Computer Science</strong>
+                    <span class="right">May 2027</span>
+                </div>
+                <p class="meta">Davao City, Philippines</p>
+                <p>Relevant Coursework: Machine Learning, Data Structures and Algorithms, Information Management, Software Engineering, Data Science, Object-Oriented Programming, Application Development</p>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="pictochat-status ds-yellow">Skills &amp; Interests</h2>
+
+            <div class="pictochat-message">
+                <header class="ds-yellow">Technical</header>
+                <p>Python, JavaScript, TypeScript, Swift, SQL, HTML/CSS | Django, Django REST Framework, Node.js, Express.js, React.js, Next.js, SwiftUI | MySQL, PostgreSQL, Prisma ORM | Docker, Git, GitHub, REST APIs, Agile/Scrum | AWS, TensorFlow, CoreML</p>
+            </div>
+
+            <div class="pictochat-message">
+                <header class="ds-yellow">Language</header>
+                <p>Filipino (Native), English (Fluent)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bar-lg-reverse ds-darkpurple"></footer>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <div class="lightbox-panel">
+            <img class="lightbox-img" alt="">
+            <div class="lightbox-info"></div>
         </div>
+    </div>
 
-        <div class="entry">
-            <div class="entry-head">
-                <strong>Mapúa Atlas – eTrack Module</strong>
-                <span class="right">November 2025 – Present</span>
-            </div>
-            <p class="meta">Roles: Backend Developer, Database Designer<br>
-            Stack: Django (Python), PostgreSQL</p>
-            <ul>
-                <li>Built scalable backend API using Python Django framework with PostgreSQL database, implementing RESTful endpoints for real-time data synchronization and secure student records management</li>
-            </ul>
-            <img src="https://placehold.co/600x300?text=Mapua+Atlas" alt="Mapúa Atlas Screenshot" class="project-image">
-        </div>
-
-        <div class="entry">
-            <div class="entry-head">
-                <strong>Aninna Business Management System</strong>
-                <span class="right">September 2025 – December 2025</span>
-            </div>
-            <p class="meta">Roles: Backend Developer, Database Designer, DevOps<br>
-            Stack: Django + DRF (Python), React, Docker + Docker Compose, Amazon EC2</p>
-            <ul>
-                <li>Delivered full-stack SaaS application using Django REST Framework and React.js with CI/CD pipeline; implemented real-time dashboard analytics, point-of-sale system, inventory tracking, payroll automation, and data visualization; deployed using Docker containerization onto Amazon EC2</li>
-            </ul>
-            <img src="https://placehold.co/600x300?text=Aninna+BMS" alt="Aninna BMS Screenshot" class="project-image">
-        </div>
-    </section>
-
-    <section>
-        <h2>Certifications</h2>
-
-        <div class="entry">
-            <div class="entry-head">
-                <strong>AWS Certified AI Practitioner</strong>
-                <span class="right">March 06, 2026 – March 06, 2029</span>
-            </div>
-            <p class="meta">Amazon Web Services Training and Certification</p>
-            <img src="https://placehold.co/600x300?text=AWS+AI+Practitioner" alt="AWS AI Practitioner" class="project-image">
-        </div>
-
-        <div class="entry">
-            <div class="entry-head">
-                <strong>IT Specialist – Data Analytics</strong>
-                <span class="right">October 20, 2025 – October 20, 2030</span>
-            </div>
-            <p class="meta">Certiport, a Pearson VUE business</p>
-            <img src="https://placehold.co/600x300?text=IT+Specialist" alt="IT Specialist - Data Analytics" class="project-image">
-        </div>
-
-        <div class="entry">
-            <div class="entry-head">
-                <strong>App Development with Swift Associate</strong>
-                <span class="right">December 2023</span>
-            </div>
-            <p class="meta">Apple</p>
-            <img src="https://placehold.co/600x300?text=Swift+Associate" alt="App Development with Swift" class="project-image">
-        </div>
-
-        <div class="entry">
-            <div class="entry-head">
-                <strong>Microsoft Office Specialist: Excel Associate (Office 2019)</strong>
-                <span class="right">September 2023</span>
-            </div>
-            <p class="meta">Microsoft</p>
-            <img src="https://placehold.co/600x300?text=MOS+Excel" alt="MOS Excel" class="project-image">
-        </div>
-    </section>
-
-    <section>
-        <h2>Experience</h2>
-        <div class="entry">
-            <div class="entry-head">
-                <strong>Student Assistant</strong>
-                <span class="right">Davao City, Philippines</span>
-            </div>
-            <div class="entry-sub">
-                <strong>Mapúa Malayan Colleges Mindanao</strong>
-                <span class="right">May 2026 – July 2026</span>
-            </div>
-            <ul>
-                <li>Developing and maintaining backend systems for internal administrative tools under the Office for Artificial Intelligence Curriculum Integration (OAICI)</li>
-                <li>Building RESTful API endpoints using Django REST Framework with PostgreSQL for secure and efficient data management</li>
-            </ul>
-            <img src="https://placehold.co/600x300?text=Student+Assistant" alt="Student Assistant" class="project-image">
-        </div>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <div class="entry">
-            <div class="entry-head">
-                <strong>Mapúa Malayan Colleges Mindanao</strong>
-                <span class="right">Davao City, Philippines</span>
-            </div>
-            <div class="entry-sub">
-                <span>Bachelor of Science in Computer Science</span>
-                <span class="right">May 2027</span>
-            </div>
-            <p>Relevant Coursework: Machine Learning, Data Structures and Algorithms, Information Management, Software Engineering, Data Science, Object-Oriented Programming, Application Development</p>
-            <img src="https://placehold.co/600x300?text=MMCM" alt="Mapúa MCM" class="project-image">
-        </div>
-    </section>
-
-    <section>
-        <h2>Skills &amp; Interests</h2>
-        <p><strong>Technical:</strong> Python, JavaScript, TypeScript, Swift, SQL, HTML/CSS | Django, Django REST Framework, Node.js, Express.js, React.js, Next.js, SwiftUI | MySQL, PostgreSQL, Prisma ORM | Docker, Git, GitHub, REST APIs, Agile/Scrum | AWS, TensorFlow, CoreML</p>
-        <p><strong>Language:</strong> Filipino (Native), English (Fluent)</p>
-    </section>
-</main>
-
-<div id="lightbox" class="lightbox" aria-hidden="true">
-    <button class="lightbox-close" aria-label="Close">&times;</button>
-    <img class="lightbox-img" alt="">
-</div>
-
-<script>
-(function () {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = lightbox.querySelector('.lightbox-img');
-    const closeBtn = lightbox.querySelector('.lightbox-close');
-
-    function open(src, alt) {
-        lightboxImg.src = src;
-        lightboxImg.alt = alt || '';
-        lightbox.classList.add('is-open');
-        lightbox.setAttribute('aria-hidden', 'false');
-    }
-
-    function close() {
-        lightbox.classList.remove('is-open');
-        lightbox.setAttribute('aria-hidden', 'true');
-        lightboxImg.src = '';
-    }
-
-    document.querySelectorAll('.project-image').forEach(img => {
-        img.addEventListener('click', () => open(img.src, img.alt));
-    });
-
-    lightbox.addEventListener('click', e => {
-        if (e.target === lightbox) close();
-    });
-    closeBtn.addEventListener('click', close);
-    document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') close();
-    });
-})();
-</script>
+    <script src="script.js"></script>
 </body>
 </html>

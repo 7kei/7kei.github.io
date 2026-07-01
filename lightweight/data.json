@@ -1,0 +1,114 @@
+{
+    "projects": [
+        {
+            "title": "Project Genesis",
+            "org": "Lumina Tech",
+            "date": "Dec 2025 - Feb 2026",
+            "role": "Full Stack Developer, Database Designer",
+            "stack": "Node.js, React, Next.js, MySQL, Prisma",
+            "description": "Multi-tenant enterprise application with a 24-table normalized schema and full CRUD API layer.",
+            "links": [{ "label": "github.com/—", "url": "#" }],
+            "image": "https://placehold.co/800x500?text=Project+Genesis"
+        },
+        {
+            "title": "Mapúa Atlas - eTrack",
+            "org": "Mapúa MCM",
+            "date": "Nov 2025 - Present",
+            "role": "Backend Developer, Database Designer",
+            "stack": "Django, PostgreSQL",
+            "description": "Django REST backend for real-time student records sync and secure data management.",
+            "links": [{ "label": "github.com/—", "url": "#" }],
+            "image": "https://placehold.co/800x500?text=Mapua+Atlas"
+        },
+        {
+            "title": "Aninna BMS",
+            "org": "Aninna",
+            "date": "Sep - Dec 2025",
+            "role": "Backend Developer, Database Designer, DevOps",
+            "stack": "Django + DRF, React, Docker, Amazon EC2",
+            "description": "Full-stack SaaS: POS, inventory, payroll, and dashboard analytics — containerized and deployed to EC2.",
+            "links": [{ "label": "github.com/—", "url": "#" }],
+            "image": "https://placehold.co/800x500?text=Aninna+BMS"
+        },
+        {
+            "title": "HappyTeeth",
+            "org": "Cascabel Dental Clinic",
+            "date": "Date: —",
+            "role": "Full Stack Developer",
+            "stack": "Web (PHP / MySQL)",
+            "description": "Web-based patient record management system that digitized the clinic's paper-based workflow.",
+            "links": [
+                { "label": "github.com/sophianyap/im", "url": "https://github.com/sophianyap/im" },
+                { "label": "happyteeth.7kei.me", "url": "https://happyteeth.7kei.me" }
+            ],
+            "image": "../archived/portfolio/images/dental-1.png"
+        },
+        {
+            "title": "MMCM Library Feedback",
+            "org": "MMCM CLIR",
+            "date": "Date: —",
+            "role": "Full Stack Developer",
+            "stack": "Node.js, SQLite",
+            "description": "Library feedback collection and reporting system for the MMCM Center for Learning & Information Resources.",
+            "links": [{ "label": "github.com/Cogiii/feedbackSystem", "url": "https://github.com/Cogiii/feedbackSystem/" }],
+            "image": "../archived/portfolio/images/library-1.png"
+        },
+        {
+            "title": "AFC POS System",
+            "org": "AFC Rescue Traders",
+            "date": "Date: —",
+            "role": "Full Stack Developer",
+            "stack": "C#, WinForms, MS SQL Server",
+            "description": "Windows point-of-sale desktop app with inventory and transaction management.",
+            "links": [{ "label": "github.com/scorkie/OOPSummative2", "url": "https://github.com/scorkie/OOPSummative2/" }],
+            "image": "../archived/portfolio/images/afc1.png"
+        },
+        {
+            "title": "pyaudiotagger",
+            "org": "Personal Project",
+            "date": "Date: —",
+            "role": "Solo Developer",
+            "stack": "Python",
+            "description": "Command-line tool for tagging audio metadata using a Python music tagging library.",
+            "links": [{ "label": "github.com/7kei/pyaudiotagger", "url": "https://github.com/7kei/pyaudiotagger/" }],
+            "image": "../archived/portfolio/images/py1.png"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "AWS Certified AI Practitioner",
+            "org": "Amazon Web Services",
+            "date": "Mar 2026 - Mar 2029",
+            "credentialId": "—",
+            "image": "https://placehold.co/800x500?text=AWS+AI+Practitioner"
+        },
+        {
+            "title": "IT Specialist - Data Analytics",
+            "org": "Certiport (Pearson VUE)",
+            "date": "Oct 2025 - Oct 2030",
+            "credentialId": "—",
+            "image": "https://placehold.co/800x500?text=IT+Specialist"
+        },
+        {
+            "title": "App Development with Swift Associate",
+            "org": "Apple",
+            "date": "Dec 2023",
+            "credentialId": "—",
+            "image": "../archived/portfolio/images/swift.png"
+        },
+        {
+            "title": "MOS: Excel Associate (Office 2019)",
+            "org": "Microsoft",
+            "date": "Sep 2023",
+            "credentialId": "—",
+            "image": "../archived/portfolio/images/office.png"
+        },
+        {
+            "title": "Discrete Mathematics",
+            "org": "LinkedIn Learning",
+            "date": "Date: —",
+            "credentialId": "—",
+            "image": "../archived/portfolio/images/linkedin.png"
+        }
+    ]
+}
