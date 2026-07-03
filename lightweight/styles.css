@@ -422,7 +422,7 @@ body {
 .project-image {
     margin: 0.75rem auto 0.25rem;
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     object-position: top;
     border: 2px solid #000;
