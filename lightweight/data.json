@@ -28,7 +28,7 @@
             "stack": "Node.js, React, Next.js, MySQL, Prisma",
             "description": "Multi-tenant enterprise application with a 24-table normalized schema and full CRUD API layer.",
             "links": [{ "label": "github.com/—", "url": "#" }],
-            "image": "https://placehold.co/800x500?text=Project+Genesis"
+            "image": "./images/genesis.jpeg"
         },
         {
             "title": "Mapúa Atlas - eTrack",
@@ -134,7 +134,7 @@
         {
             "title": "AAMS",
             "org": "Independent Project",
-            "date": "Apr 2024 - May 2023",
+            "date": "Apr 2023 - May 2023",
             "role": "Full Stack Developer",
             "stack": ".NET Framework, C#, WinForms, MS SQL Server",
             "description": "It is the middleware component of my senior high school capstone project entitled \"Automatic Attendance Monitoring System\". It interfaces between a Microsft SQL Server instance and the serial output of an Arduino UNO.",
