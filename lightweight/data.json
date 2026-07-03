@@ -8,7 +8,7 @@
             "stack": "Python, Django, PostgreSQL",
             "description": "Developed the backend for a web-based clearance system for Mapúa MCM students, including a PostgreSQL database schema and Django REST API.",
             "links": [{ "label": "github.com/—", "url": "#" }],
-            "image": "https://placehold.co/800x500?text=Mapúa+eClearance"
+            "image": "./images/eclearance.png"
         },
         {
             "title": "Kuyog",
@@ -18,7 +18,7 @@
             "stack": "Flutter, Dart, Firebase",
             "description": "Developed the frontend of a cross-platform mobile app for Mindanao tourism.",
             "links": [{ "label": "github.com/—", "url": "#" }],
-            "image": "https://placehold.co/800x500?text=Kuyog"
+            "image": "./images/kuyog.png"
         },
         {
             "title": "Project Genesis",
@@ -48,7 +48,7 @@
             "stack": "Django + DRF, React, Docker, Amazon EC2",
             "description": "Full-stack SaaS: POS, inventory, payroll, and dashboard analytics — containerized and deployed to EC2.",
             "links": [{ "label": "github.com/—", "url": "#" }],
-            "image": "https://placehold.co/800x500?text=Aninna+BMS"
+            "image": "./images/aninna.png"
         },
 
         {
@@ -61,7 +61,7 @@
             "links": [
                 { "label": "github.com/7kei/Fishease", "url": "https://github.com/7kei/Fishease" }
             ],
-            "image": "https://placehold.co/800x500?text=Fishease"
+            "image": "./images/fishease.png"
         },
         {
             "title": "HappyTeeth",
@@ -106,7 +106,7 @@
             "links": [
                 { "label": "github.com/7kei/SwiftTokenizer", "url": "https://github.com/7kei/SwiftTokenizer" }
             ],
-            "image": "https://placehold.co/800x500?text=SwiftTokenizer"
+            "image": "./images/swifttokenizer.png"
         },
         {
             "title": "pyaudiotagger",
@@ -129,17 +129,17 @@
                 { "label": "github.com/sophianyap/im", "url": "https://github.com/sophianyap/im" },
                 { "label": "happyteeth.7kei.me", "url": "https://happyteeth.7kei.me" }
             ],
-            "image": "https://placehold.co/800x500?text=mod3_project"
+            "image": "./images/mod3_project.png"
         },
         {
-            "title": "Automatic Attendance Monitoring System",
+            "title": "AAMS",
             "org": "Independent Project",
             "date": "Apr 2024 - May 2023",
             "role": "Full Stack Developer",
             "stack": ".NET Framework, C#, WinForms, MS SQL Server",
-            "description": "It is the middleware component of my senior high school capstone project. It interfaces between a Microsft SQL Server instance and the serial output of an Arduino UNO.",
+            "description": "It is the middleware component of my senior high school capstone project entitled \"Automatic Attendance Monitoring System\". It interfaces between a Microsft SQL Server instance and the serial output of an Arduino UNO.",
             "links": [{ "label": "github.com/7kei/capstone_dotnetframework", "url": "https://github.com/7kei/capstone_dotnetframework/" }],
-            "image": "https://placehold.co/800x500?text=Automatic+Attendance+Monitoring+System"
+            "image": "./images/aams.png"
         }
     ],
     "certifications": [
