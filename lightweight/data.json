@@ -38,7 +38,7 @@
             "stack": "Django, PostgreSQL",
             "description": "Django REST backend for real-time student records sync and secure data management.",
             "links": [{ "label": "github.com/—", "url": "#" }],
-            "image": "https://placehold.co/800x500?text=Mapua+Atlas"
+            "image": "./images/etrack.png"
         },
         {
             "title": "Aninna BMS",
@@ -148,35 +148,28 @@
             "org": "Amazon Web Services",
             "date": "Mar 2026 - Mar 2029",
             "credentialId": "—",
-            "image": "https://placehold.co/800x500?text=AWS+AI+Practitioner"
+            "image": "./images/certificates/aifc01_cert.jpg"
         },
         {
             "title": "IT Specialist - Data Analytics",
             "org": "Certiport (Pearson VUE)",
             "date": "Oct 2025 - Oct 2030",
             "credentialId": "—",
-            "image": "https://placehold.co/800x500?text=IT+Specialist"
+            "image": "./images/certificates/its_cert.jpg"
         },
         {
             "title": "App Development with Swift Associate",
             "org": "Apple",
             "date": "Dec 2023",
             "credentialId": "—",
-            "image": "../archived/portfolio/images/swift.png"
+            "image": "./images/certificates/swift_cert.jpg"
         },
         {
             "title": "MOS: Excel Associate (Office 2019)",
             "org": "Microsoft",
             "date": "Sep 2023",
             "credentialId": "—",
-            "image": "../archived/portfolio/images/office.png"
-        },
-        {
-            "title": "Discrete Mathematics",
-            "org": "LinkedIn Learning",
-            "date": "Date: —",
-            "credentialId": "—",
-            "image": "../archived/portfolio/images/linkedin.png"
+            "image": "./images/certificates/excel_cert.jpg"
         }
     ]
 }
